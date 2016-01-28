@@ -1,0 +1,18 @@
+caniuse.com --> es6 a JS update
+Babel?
+In head of the talk today. Wouldn't use in full scale app but useful for this small project lesson. It's a new syntax that doesn't work in all browsers but most modern versions ok. 
+Can use codepen jsfiddle jsbin with Babel if you select es6 as an option. 
+
+const shall never have duplicate name or changed value
+
+let
+you can use const and use let inside the block safely without error
+
+native JS now uses ``'s as templating language
+backticks represent a string template and $curlies are var wrappers
+
+using ...arrayName aka "spread opertors" for putting arrays in arrays automatically flattens
+console.log(...alreadyFlatArray) logs all items without quotes
+
+add default values to name function (a=1, y=2) {console.log(a+y);};
+

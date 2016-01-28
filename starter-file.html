@@ -2,7 +2,69 @@
 <html>
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
-	<script type="text/babel">
+  <script type="text/babel">
+    const  x = 10;
+    if(x) {
+      let x = 4;
+      console.log(x)
+    }
+    console.log(x);
+
+    function print(firstName){
+      console.log("Hello " + firstName);
+      console.log(`Hello ${firstName}`);
+    }
+    print("Adele");
+
+    function createEmail(firstName, purchasePrice){
+      var shipping = 5.95;
+      console.log(`Hi ${firstName}, Thanks for buying from us!
+               Total: $${purchasePrice}
+               Shipping: $${shipping}
+               Grand Total: $${purchasePrice + shipping}
+               `
+     );
+    }
+    createEmail("Adele", 100);
+
+    var groceries = ["salmon", "cream cheese", "bagels", "bacon", "capers", "red onion"];
+    var adeleSongs = ["Hello", "Set Fire to the Rain", "Rolling in the Deep", "Someone Like You"];
+    var alcoholicBeverages = ["Beer", "Wine", "Rum", "Tequila", "Champagne"];
+    var groceries = [adeleSongs, alcoholicBeverages, "red onion", "bagels"];
+    console.log(groceries);
+
+    var groceries2 = [...adeleSongs, ...alcoholicBeverages, "red onion", "bagels"];
+    console.log(groceries2);
+    console.log(...adeleSongs);
+
+    function add(x=3, y=5){
+      console.log(x+y);
+    }
+    add(undefined, 50);
+    add();
+    //add(,30); doesn't work
+    
+    var studentList = function(students){
+      console.log(students);
+    };
+    studentList(["Joe", "Jean", "Bill"]);
+
+    var studentList2 = students => console.log(students)
+    // can keep curlies if >1 line
+    // replace function with fat arrow
+    // var studentList2 = (students, teachers) => {console.log(students); console.log(etc);}
+
+//     for(var i=0;i<45;i++){
+//      var div = document.createElement('div');
+//      div.onclick = function() {
+//        alert("you clicked on a box #" + i);
+//      };
+//      document.getElementsByTagName('section')[0].appendChild(div);
+//    } 
+
+
+    
+
   </script>
 	<title>Template</title>
 </head>
